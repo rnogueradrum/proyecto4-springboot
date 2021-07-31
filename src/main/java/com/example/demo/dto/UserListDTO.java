@@ -4,10 +4,12 @@ import java.util.List;
 
 import com.example.demo.domain.User;
 
+import io.swagger.annotations.ApiModelProperty;
+
 
 
 public class UserListDTO {
-	
+	@ApiModelProperty("List envuelto en objeto UserListDTO con getUser y setUser")
 	private List<User> users;
 
 	

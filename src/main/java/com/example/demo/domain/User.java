@@ -6,6 +6,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import io.swagger.annotations.ApiModelProperty;
+
 @Entity
 @Table(name="app_users")
 public class User {
@@ -13,16 +15,17 @@ public class User {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@ApiModelProperty("Clave primaria id Long autoincremental")
 	private Long id;
-	
+	@ApiModelProperty("Nombre en formato texto")
 	private String username;
-	
+	@ApiModelProperty("Email en formato texto")
 	private String email;
-	
+	@ApiModelProperty("Password en formato texto")
 	private String password;
-	
+	@ApiModelProperty("CIF en formato texto")
 	private String cif;
-	
+	@ApiModelProperty("Dirección en formato texto")
 	private String address;
 	
 	
