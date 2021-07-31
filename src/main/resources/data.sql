@@ -1,0 +1,6 @@
+INSERT INTO app_users (username, email, password, cif, address) VALUES ('rnoguera','rnogueradrum@gmail.com', '$2a$10$mVbq2kUyQtadt0mlakfzfuP2molhy.r4VP3S1KCrTRFQmo1bhtWJm', '28.000.333-M', 'calle del Suspiro Verde nº 3');
+INSERT INTO app_users (username, email, password, cif, address) VALUES ('Prince', 'prince@gmail.com','$2a$10$NOCpEHp5/qYoJmFQSvAr7e0Qz8eF5BKqQLA6X5BynGDFBIhF5iKO2', '28.111.333-M', 'calle del Boquerón nº 99');
+INSERT INTO app_users (username, email, password, cif, address) VALUES ('Stewart Copeland ', 'copelan@gmail.com', '$2a$10$yc/EmUoC8rSgpIUAHP/4tOrSBun.Y6oiRd8qRiFR5ULJ4cqr4h82i', '24.000.000-J', 'calle del Tigre nº 33');
+INSERT INTO app_users (username, email, password, cif, address) VALUES ('Roger Taylor', 'rogertaylor@gmail.com', '$2a$10$IQZJH2vmtXMOVpfmkygRdus9WAtwLeWz2IggDSWMaU9e9R0HZS6v2', '29.000.666-H', 'calle del Búho nº 12');
+INSERT INTO app_users (username, email, password, cif, address) VALUES ('Buddy Rich', 'buddyrich@gmail.com', '$2a$10$Ju/EOQEHEWDAu1I7jSbliu9SeAjwGiGhAmBoLJ6HtAGBGZU2te2wO', '28.000.111-L', 'calle del Toro nº 5');
+INSERT INTO app_users (username, email, password, cif, address) VALUES ('alan', 'alan@alan', '$2a$10$qINz45KQzkLHtzOovvgjn.y1SKh8zfR5Meyh61FHz3bvSlO4uez.O', '23.444.999-V', 'calle del Mono nº 8');
