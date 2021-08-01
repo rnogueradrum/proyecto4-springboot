@@ -4,3 +4,7 @@ INSERT INTO app_users (username, email, password, cif, address) VALUES ('Stewart
 INSERT INTO app_users (username, email, password, cif, address) VALUES ('Roger Taylor', 'rogertaylor@gmail.com', '$2a$10$IQZJH2vmtXMOVpfmkygRdus9WAtwLeWz2IggDSWMaU9e9R0HZS6v2', '29.000.666-H', 'calle del Búho nº 12');
 INSERT INTO app_users (username, email, password, cif, address) VALUES ('Buddy Rich', 'buddyrich@gmail.com', '$2a$10$Ju/EOQEHEWDAu1I7jSbliu9SeAjwGiGhAmBoLJ6HtAGBGZU2te2wO', '28.000.111-L', 'calle del Toro nº 5');
 INSERT INTO app_users (username, email, password, cif, address) VALUES ('alan', 'alan@alan', '$2a$10$qINz45KQzkLHtzOovvgjn.y1SKh8zfR5Meyh61FHz3bvSlO4uez.O', '23.444.999-V', 'calle del Mono nº 8');
+INSERT INTO companies (companyname, cif, employeesnumber, articlesnumber, seniority, turnover) VALUES ('Virgin Telecom', '33002233', 1500.0, 500.0, 25, 0.0);
+INSERT INTO companies (companyname, cif, employeesnumber, articlesnumber, seniority, turnover) VALUES ('Amazon', '33002233', 1500.0, 500000.0, 30, 0.0);
+INSERT INTO companies (companyname, cif, employeesnumber, articlesnumber, seniority, turnover) VALUES ('Google', '22222333', 25000.0, 50500.0, 35, 0.0);
+INSERT INTO companies (companyname, cif, employeesnumber, articlesnumber, seniority, turnover) VALUES ('Facebook', '33332233', 15000.0, 800.0, 25, 0.0);

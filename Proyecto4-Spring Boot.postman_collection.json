@@ -1,0 +1,533 @@
+{
+	"info": {
+		"_postman_id": "ffbc1e97-8a9b-4b6a-8723-055c8f97e686",
+		"name": "Proyecto4-Spring Boot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "USER",
+			"item": [
+				{
+					"name": "findAll USER",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "count USER",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users/count",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"count"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById USER",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByUsername USER",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users/usernames/Stewart Copeland",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"usernames",
+								"Stewart Copeland"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByEmail USER",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users/emails/rnogueradrum@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"emails",
+								"rnogueradrum@gmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createOne USER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"username\": \"Billy Cobhan\",\n        \"email\": \"cobhan@gmail.com\",\n        \"password\": \"$2a$10$yc/EmUoC8rSgpIUAHP/4tOrSBun.Y6oiRd8qRiFR5ULJ4cqr4h82i\",\n        \"cif\": \"27.000.000-C\",\n        \"address\": \"calle del Ratón nº 55\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateOne USER",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 7,\n    \"username\": \"Billy Cobham\",\n    \"email\": \"cobham@gmail.com\",\n    \"password\": \"$2a$10$yc/EmUoC8rSgpIUAHP/4tOrSBun.Y6oiRd8qRiFR5ULJ4cqr4h82i\",\n    \"cif\": \"27.000.000-C\",\n    \"address\": \"calle del Ratón nº 55\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteById USER",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete many USER",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"users\": [\n        {\n        \"id\": 5,\n        \"username\": \"Buddy Rich\",\n        \"email\": \"buddyrich@gmail.com\",\n        \"password\": \"$2a$10$Ju/EOQEHEWDAu1I7jSbliu9SeAjwGiGhAmBoLJ6HtAGBGZU2te2wO\",\n        \"cif\": \"28.000.111-L\",\n        \"address\": \"calle del Toro nº 5\"\n    },\n    {\n        \"id\": 6,\n        \"username\": \"alan\",\n        \"email\": \"alan@alan\",\n        \"password\": \"$2a$10$qINz45KQzkLHtzOovvgjn.y1SKh8zfR5Meyh61FHz3bvSlO4uez.O\",\n        \"cif\": \"23.444.999-V\",\n        \"address\": \"calle del Mono nº 8\"\n    }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/deletemany",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"deletemany"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete  ALL USER",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"users\": [\n        {\n        \"id\": 5,\n        \"username\": \"Buddy Rich\",\n        \"email\": \"buddyrich@gmail.com\",\n        \"password\": \"$2a$10$Ju/EOQEHEWDAu1I7jSbliu9SeAjwGiGhAmBoLJ6HtAGBGZU2te2wO\",\n        \"cif\": \"28.000.111-L\",\n        \"address\": \"calle del Toro nº 5\"\n    },\n    {\n        \"id\": 6,\n        \"username\": \"alan\",\n        \"email\": \"alan@alan\",\n        \"password\": \"$2a$10$qINz45KQzkLHtzOovvgjn.y1SKh8zfR5Meyh61FHz3bvSlO4uez.O\",\n        \"cif\": \"23.444.999-V\",\n        \"address\": \"calle del Mono nº 8\"\n    }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "COMPANY",
+			"item": [
+				{
+					"name": "findAll COMPANY",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/companies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "count COMPANY",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/companies/count",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"companies",
+								"count"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById COMPANY",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/companies/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"companies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "calculate Turnover COMPANY",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/companies/calculate-turnover/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"companies",
+								"calculate-turnover",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByCompanyname COMPANY",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/companies/companiesnames/Google",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"companies",
+								"companiesnames",
+								"Google"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByCif COMPANY",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/companies/cifs/33332233",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"companies",
+								"cifs",
+								"33332233"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createOne COMPANY",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"companyname\": \"Apple\",\n        \"cif\": \"0011223344\",\n        \"employeesnumber\": 190000.0,\n        \"articlesnumber\": 9000.0,\n        \"seniority\": 55,\n        \"turnover\": 0.0\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/companies/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"companies",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateOne COMPANY",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"id\": 2,\n        \"companyname\": \"Amazon Books Limited Company\",\n        \"cif\": \"33002233\",\n        \"employeesnumber\": 1500.0,\n        \"articlesnumber\": 500000.0,\n        \"seniority\": 30,\n        \"turnover\": 0.0\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/companies/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"companies",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteById COMPANY",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/companies/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"companies",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete many COMPANY",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"companies\": [\n        {\n        \"id\": 1,\n        \"companyname\": \"Virgin Telecom\",\n        \"cif\": \"33002233\",\n        \"employeesnumber\": 1500.0,\n        \"articlesnumber\": 500.0,\n        \"seniority\": 25,\n        \"turnover\": 0.0\n    },\n    {\n        \"id\": 4,\n        \"companyname\": \"Facebook\",\n        \"cif\": \"33332233\",\n        \"employeesnumber\": 15000.0,\n        \"articlesnumber\": 800.0,\n        \"seniority\": 25,\n        \"turnover\": 0.0\n    }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/companies/deletemany",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"companies",
+								"deletemany"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete  ALL COMPANY",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"users\": [\n        {\n        \"id\": 5,\n        \"username\": \"Buddy Rich\",\n        \"email\": \"buddyrich@gmail.com\",\n        \"password\": \"$2a$10$Ju/EOQEHEWDAu1I7jSbliu9SeAjwGiGhAmBoLJ6HtAGBGZU2te2wO\",\n        \"cif\": \"28.000.111-L\",\n        \"address\": \"calle del Toro nº 5\"\n    },\n    {\n        \"id\": 6,\n        \"username\": \"alan\",\n        \"email\": \"alan@alan\",\n        \"password\": \"$2a$10$qINz45KQzkLHtzOovvgjn.y1SKh8zfR5Meyh61FHz3bvSlO4uez.O\",\n        \"cif\": \"23.444.999-V\",\n        \"address\": \"calle del Mono nº 8\"\n    }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/companies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"companies"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

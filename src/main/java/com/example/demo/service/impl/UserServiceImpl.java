@@ -141,6 +141,6 @@ public class UserServiceImpl implements UserService {
 		return this.userRepository.findByEmail(email);
 	}
 	
-	//Método privado para Calcular facturación
+	
 
 }
